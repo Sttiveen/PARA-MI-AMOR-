@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🌻 Para Mi Pollito Hermosa 💛</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding:25px 15px;
+    overflow-y:auto;
+    font-family:Georgia, serif;
+    background:linear-gradient(180deg,#fff8d6,#ffe88e);
+}
+
+.card{
+    width:100%;
+    max-width:700px;
+    background:rgba(255,255,255,0.92);
+    padding:30px;
+    border-radius:30px;
+    text-align:center;
+    box-shadow:0 10px 35px rgba(0,0,0,0.2);
+    position:relative;
+    z-index:2;
+}
+
+h1{
+    color:#d4a017;
+    margin-bottom:20px;
+    font-size:2.2rem;
+}
+
+p{
+    font-size:1.2rem;
+    line-height:1.9;
+    color:#444;
+}
+
+.bouquet{
+    width:100%;
+    max-width:350px;
+    margin:30px auto;
+    display:block;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+}
+
+.signature{
+    margin-top:20px;
+    color:#c89b00;
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+.flower{
+    position:fixed;
+    top:-50px;
+    font-size:30px;
+    pointer-events:none;
+    animation:fall linear infinite;
+}
+
+@keyframes fall{
+    from{
+        transform:translateY(-100px) rotate(0deg);
+    }
+    to{
+        transform:translateY(120vh) rotate(360deg);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>🌻 Para Mi Pollito Hermosa 🌻</h1>
+
+<p>
+Te amo mucho, mi pollito hermosa. 💛
+</p>
+
+<br>
+
+<p>
+Aunque tuve un accidente y no pude entregarte tus flores amarillas como me hubiera gustado, no quería que te quedaras sin ellas.
+</p>
+
+<br>
+
+<p>
+Por eso preparé este pequeño detalle para ti. Porque eres una persona muy especial para mí y mereces todas las flores amarillas del mundo.
+</p>
+
+<br>
+
+<p>
+Gracias por tu amor, por tu paciencia, por tu compañía y por llenar mis días de felicidad.
+</p>
+
+<br>
+
+<p>
+Espero que estas flores amarillas iluminen tu día tanto como tú iluminas mi vida. 🌻✨
+</p>
+
+https://images.unsplash.com/photo-1527061011665-3652c757a4d4?auto=format&fit=crop&w=800&q=80
+
+<div class="signature">
+💛 Con mucho amor,<br>
+Tu novio Stiven 💛
+</div>
+
+</div>
+
+<script>
+for(let i=0;i<40;i++){
+    let flower=document.createElement("div");
+    flower.className="flower";
+    flower.innerHTML=Math.random()>0.5 ? "🌻" : "💛";
+    flower.style.left=Math.random()*100+"vw";
+    flower.style.animationDuration=(8+Math.random()*8)+"s";
+    flower.style.animationDelay=Math.random()*5+"s";
+    document.body.appendChild(flower);
+}
+</script>
+
+</body>
+</html>
